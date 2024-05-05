@@ -4,6 +4,7 @@ This is a refactored version of the code used for "[A Probabilistic Framework fo
 
 #### Creating a conda environment: 
     conda create -n PICLE python=3.9
+    conda activate PICLE
     pip install --upgrade pip
     pip install -r requirements.txt
 
