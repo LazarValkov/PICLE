@@ -24,8 +24,8 @@ This file can be used to run different baselines on different BELL sequences. To
 
     python Experiments/BELL/Experiment.py -h
 
-#### Code readability note:
-The code currently refers to paths as programs, as both specify how an input should be processed.
-
+#### Notes:
+- The code currently refers to paths as programs, as both specify how an input should be processed.
+- If you get an OSError, it might be caused by the result file locker, which safely handles concurrently running algorithms for the same sequence. You can go to Experiments/Interface/Experiment.py and comment out its use on line 44.
 #### Rerefences
 [1] Valkov, L., Srivastava, A., Chaudhuri, S. and Sutton, C., 2023. A Probabilistic Framework for Modular Continual Learning. arXiv preprint arXiv:2306.06545.

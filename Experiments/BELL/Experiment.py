@@ -1,3 +1,7 @@
+import os
+import sys
+sys.path.append(os.getcwd())
+os.environ['CUBLAS_WORKSPACE_CONFIG'] = ":4096:8"  # used for running deterministic version of the algorithms on the gpu
 import argparse
 import torch
 torch.use_deterministic_algorithms(True)
